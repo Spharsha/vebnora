@@ -164,12 +164,26 @@ export default function Home() {
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="flex min-h-64 items-end rounded-3xl border border-white/10 bg-gradient-to-br from-blue-600/40 to-violet-900/50 p-8">
+          <a
+            href="https://private-school-democd.prabhakarsamitipoguj.workers.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex min-h-64 items-end rounded-3xl border border-white/10 bg-gradient-to-br from-purple-600/50 to-violet-950/70 p-8 transition duration-300 hover:-translate-y-2 hover:border-violet-400/50"
+          >
             <div>
-              <p className="text-sm text-blue-200">Concept Project 01</p>
-              <h3 className="mt-2 text-2xl font-bold">Business Website</h3>
+              <p className="text-sm text-violet-200">Featured Project 01</p>
+              <h3 className="mt-2 text-2xl font-bold">
+                Aurelia International School
+              </h3>
+              <p className="mt-3 text-sm text-gray-300">
+                Independent School Website
+              </p>
+              <span className="mt-5 inline-block text-sm font-semibold text-violet-300">
+                Visit Website ↗
+              </span>
             </div>
-          </div>
+          </a>
+
           <div className="flex min-h-64 items-end rounded-3xl border border-white/10 bg-gradient-to-br from-pink-600/30 to-violet-900/50 p-8">
             <div>
               <p className="text-sm text-pink-200">Concept Project 02</p>
