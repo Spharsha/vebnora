@@ -41,7 +41,6 @@ export default function Home() {
           <summary className="cursor-pointer list-none rounded-xl border border-white/20 px-4 py-2 text-sm font-semibold">
             Menu ☰
           </summary>
-
           <div className="absolute right-0 top-14 z-50 w-52 rounded-2xl border border-white/10 bg-[#15172a] p-4 shadow-xl">
             <div className="flex flex-col gap-4 text-sm text-gray-300">
               <a href="#services">Services</a>
@@ -85,7 +84,6 @@ export default function Home() {
             >
               Start Your Project ↗
             </a>
-
             <a
               href="#work"
               className="rounded-full border border-white/20 px-8 py-4 font-bold transition hover:bg-white/10"
@@ -116,7 +114,6 @@ export default function Home() {
         <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
           What We Do
         </p>
-
         <h2 className="mt-4 text-4xl font-bold md:text-5xl">
           Digital Solutions for
           <span className="text-violet-400"> Your Growth.</span>
@@ -162,7 +159,6 @@ export default function Home() {
         <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
           Selected Work
         </p>
-
         <h2 className="mt-4 text-4xl font-bold md:text-5xl">
           Ideas Into <span className="text-violet-400">Experiences.</span>
         </h2>
@@ -174,7 +170,6 @@ export default function Home() {
               <h3 className="mt-2 text-2xl font-bold">Business Website</h3>
             </div>
           </div>
-
           <div className="flex min-h-64 items-end rounded-3xl border border-white/10 bg-gradient-to-br from-pink-600/30 to-violet-900/50 p-8">
             <div>
               <p className="text-sm text-pink-200">Concept Project 02</p>
@@ -189,11 +184,9 @@ export default function Home() {
         <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
           Why Vebnora
         </p>
-
         <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-bold md:text-5xl">
           Your Business Deserves a Better Digital Presence.
         </h2>
-
         <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-400">
           We believe every business deserves a website that looks professional,
           works smoothly and makes it easier for customers to connect.
@@ -206,12 +199,10 @@ export default function Home() {
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
             Simple Pricing
           </p>
-
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">
             Plans That Fit Your{" "}
             <span className="text-violet-400">Business.</span>
           </h2>
-
           <p className="mx-auto mt-5 max-w-2xl text-gray-400">
             Flexible website packages to help your business build a strong
             online presence.
@@ -270,21 +261,16 @@ export default function Home() {
                   POPULAR
                 </span>
               )}
-
               <h3 className="text-2xl font-bold">{plan.name}</h3>
               <p className="mt-3 text-sm text-gray-400">{plan.description}</p>
-
               <p className="mt-8 text-4xl font-black">{plan.price}</p>
               <p className="mt-1 text-sm text-gray-500">Starting price</p>
-
               <div className="my-8 h-px bg-white/10" />
-
               <ul className="space-y-4 text-sm text-gray-300">
                 {plan.features.map((feature) => (
                   <li key={feature}>✓ {feature}</li>
                 ))}
               </ul>
-
               <a
                 href="#contact"
                 className="mt-10 block rounded-full bg-white px-5 py-3 text-center font-bold text-gray-900 transition hover:bg-violet-200"
@@ -308,7 +294,6 @@ export default function Home() {
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
             How We Work
           </p>
-
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">
             Simple Process.{" "}
             <span className="text-violet-400">Great Results.</span>
@@ -347,9 +332,7 @@ export default function Home() {
               <span className="text-3xl font-black text-violet-400">
                 {step.number}
               </span>
-
               <h3 className="mt-6 text-xl font-bold">{step.title}</h3>
-
               <p className="mt-3 text-sm leading-7 text-gray-400">
                 {step.description}
               </p>
@@ -366,19 +349,16 @@ export default function Home() {
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
                 Ongoing Support
               </p>
-
               <h2 className="mt-5 text-4xl font-black leading-tight md:text-5xl">
                 Your Website.
                 <br />
                 <span className="text-violet-400">Always Up to Date.</span>
               </h2>
-
               <p className="mt-6 leading-8 text-gray-300">
                 Your website needs attention even after launch. We offer ongoing
                 maintenance to help keep your website updated, secure and
                 running smoothly.
               </p>
-
               <a
                 href="#contact"
                 className="mt-8 inline-block rounded-full bg-white px-7 py-4 font-bold text-gray-900 transition hover:bg-violet-200"
@@ -402,7 +382,6 @@ export default function Home() {
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-violet-500/20 text-violet-300">
                     ✓
                   </span>
-
                   <span className="text-gray-200">{item}</span>
                 </div>
               ))}
@@ -420,7 +399,6 @@ export default function Home() {
           <h2 className="text-4xl font-black md:text-5xl">
             Have a Project in Mind?
           </h2>
-
           <p className="mt-5 text-blue-100">
             Tell us about your project. Let's create something great for your
             business.
@@ -437,13 +415,11 @@ export default function Home() {
             name="access_key"
             value="0bc0e9a8-86da-4402-a066-cd82fd23d5d7"
           />
-
           <input
             type="hidden"
             name="subject"
             value="New Vebnora Website Enquiry"
           />
-
           <input type="hidden" name="from_name" value="Vebnora Website" />
           <input
             type="hidden"
@@ -452,6 +428,7 @@ export default function Home() {
           />
           <input type="hidden" name="_captcha" value="true" />
           <input type="hidden" name="_template" value="table" />
+
           <div>
             <label htmlFor="name" className="mb-2 block text-sm font-semibold">
               Your Name
@@ -568,7 +545,21 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Vebnora. All rights reserved.
+        <div className="mb-4 flex flex-wrap items-center justify-center gap-6">
+          <Link
+            href="/privacy"
+            className="text-gray-400 transition hover:text-violet-400"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            href="/terms"
+            className="text-gray-400 transition hover:text-violet-400"
+          >
+            Terms & Conditions
+          </Link>
+        </div>
+        © {new Date().getFullYear()} Vebnora. All rights reserved.
       </footer>
     </main>
   );
