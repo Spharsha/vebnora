@@ -159,37 +159,113 @@ export default function Home() {
         <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
           Selected Work
         </p>
+
         <h2 className="mt-4 text-4xl font-bold md:text-5xl">
           Ideas Into <span className="text-violet-400">Experiences.</span>
         </h2>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <a
-            href="https://private-school-democd.prabhakarsamitipoguj.workers.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex min-h-64 items-end rounded-3xl border border-white/10 bg-gradient-to-br from-purple-600/50 to-violet-950/70 p-8 transition duration-300 hover:-translate-y-2 hover:border-violet-400/50"
-          >
-            <div>
-              <p className="text-sm text-violet-200">Featured Project 01</p>
-              <h3 className="mt-2 text-2xl font-bold">
-                Aurelia International School
-              </h3>
-              <p className="mt-3 text-sm text-gray-300">
-                Independent School Website
+        <p className="mt-5 max-w-2xl leading-7 text-gray-400">
+          Explore our website concepts across different industries. Each project
+          demonstrates our approach to modern design and user experience.
+        </p>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              number: "Featured Project 01",
+              title: "Aurelia International School",
+              category: "Education · School Website",
+              image: "/images/aurelia.png",
+              description:
+                "A modern school website showcasing learning, campus facilities and admissions.",
+              url: "https://private-school-democd.prabhakarsamitipoguj.workers.dev",
+              gradient: "from-purple-600/50 to-violet-950/70",
+            },
+            {
+              number: "Live Demo 02",
+              title: "Auren Interiors",
+              category: "Interior Design · Business Website",
+              image: "/images/auren.png",
+              description:
+                "An elegant digital presence for an interior design studio.",
+              url: "https://vebnora-interior-demo.prabhakarsamitipoguj.workers.dev",
+              gradient: "from-amber-600/40 to-orange-950/70",
+            },
+            {
+              number: "Live Demo 03",
+              title: "Ember & Olive",
+              category: "Restaurant · Hospitality",
+              image: "/images/ember.png",
+              description:
+                "A stylish restaurant website with menu and reservation experience.",
+              url: "https://ember-olive.prabhakarsamitipoguj.workers.dev",
+              gradient: "from-orange-600/40 to-red-950/70",
+            },
+            {
+              number: "Live Demo 04",
+              title: "Havenstone Realty",
+              category: "Real Estate · Property Website",
+              image: "/images/havenstone.png",
+              description:
+                "A professional real estate website designed to present properties.",
+              url: "https://havenstone-realty.prabhakarsamitipoguj.workers.dev",
+              gradient: "from-emerald-600/40 to-green-950/70",
+            },
+            {
+              number: "Live Demo 05",
+              title: "Everwell Dental Studio",
+              category: "Healthcare · Dental Website",
+              image: "/images/everwell.png",
+              description:
+                "A welcoming dental clinic website presenting treatments and appointments.",
+              url: "https://everwell-dental.prabhakarsamitipoguj.workers.dev",
+              gradient: "from-cyan-600/40 to-blue-950/70",
+            },
+            {
+              number: "Live Demo 06",
+              title: "Lexora Legal",
+              category: "Legal · Law Firm Website",
+              image: "/images/lexora.png",
+              description:
+                "A refined law firm website highlighting legal services and client enquiries.",
+              url: "https://lexora-legalcd.prabhakarsamitipoguj.workers.dev",
+              gradient: "from-slate-500/40 to-indigo-950/70",
+            },
+          ].map((project) => (
+            <a
+              key={project.number}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group flex min-h-72 flex-col justify-end overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br ${project.gradient} p-6 transition duration-300 hover:-translate-y-2 hover:border-violet-400/50`}
+            >
+              {project.image && (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="mb-6 h-44 w-full rounded-2xl object-cover"
+                />
+              )}
+
+              <p className="text-sm font-semibold text-violet-200">
+                {project.number}
               </p>
-              <span className="mt-5 inline-block text-sm font-semibold text-violet-300">
+
+              <h3 className="mt-3 text-2xl font-bold">{project.title}</h3>
+
+              <p className="mt-2 text-xs font-medium uppercase tracking-wider text-gray-300">
+                {project.category}
+              </p>
+
+              <p className="mt-4 text-sm leading-6 text-gray-300">
+                {project.description}
+              </p>
+
+              <span className="mt-6 inline-block text-sm font-bold text-violet-200 transition group-hover:translate-x-2">
                 Visit Website ↗
               </span>
-            </div>
-          </a>
-
-          <div className="flex min-h-64 items-end rounded-3xl border border-white/10 bg-gradient-to-br from-pink-600/30 to-violet-900/50 p-8">
-            <div>
-              <p className="text-sm text-pink-200">Concept Project 02</p>
-              <h3 className="mt-2 text-2xl font-bold">Creative Landing Page</h3>
-            </div>
-          </div>
+            </a>
+          ))}
         </div>
       </section>
 
