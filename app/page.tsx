@@ -15,7 +15,7 @@ export default function Home() {
             Services
           </a>
           <a href="#work" className="hover:text-white">
-            Our Work
+            Samples (Demo)
           </a>
           <a href="#about" className="hover:text-white">
             About
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="absolute right-0 top-14 z-50 w-52 rounded-2xl border border-white/10 bg-[#15172a] p-4 shadow-xl">
             <div className="flex flex-col gap-4 text-sm text-gray-300">
               <a href="#services">Services</a>
-              <a href="#work">Our Work</a>
+              <a href="#work">Samples (Demo)</a>
               <a href="#about">About</a>
               <a href="#pricing">Pricing</a>
               <a href="#contact">Contact</a>
@@ -269,18 +269,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="mx-auto max-w-7xl px-6 py-24 text-center">
-        <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
-          Why Vebnora
-        </p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-bold md:text-5xl">
-          Your Business Deserves a Better Digital Presence.
-        </h2>
-        <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-400">
-          We believe every business deserves a website that looks professional,
-          works smoothly and makes it easier for customers to connect.
-        </p>
+      {/* About - Meet the Founder */}
+      <section id="about" className="mx-auto max-w-7xl px-6 py-24">
+        <div className="grid items-center gap-12 md:grid-cols-[320px_1fr] lg:grid-cols-[380px_1fr]">
+          <div className="mx-auto w-full max-w-xs md:max-w-none">
+            <div className="overflow-hidden rounded-3xl border border-violet-400/30 bg-white/[0.04] p-2">
+              <img
+                src="/images/founder.jpg"
+                alt="S. Prabhakar, Founder and Web Developer at Vebnora"
+                className="aspect-square w-full rounded-2xl object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="text-center md:text-left">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
+              Meet the Founder
+            </p>
+            <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+              S. Prabhakar
+            </h2>
+            <p className="mt-3 text-lg font-semibold text-violet-300">
+              Founder & Web Developer · Hyderabad
+            </p>
+
+            <p className="mt-6 max-w-2xl leading-8 text-gray-300">
+              Hi, I'm Prabhakar, founder of Vebnora in Hyderabad. I build fast,
+              good-looking websites that help small businesses and startups get
+              more customers online: shops, clinics, salons, restaurants and
+              more.
+            </p>
+            <p className="mt-4 max-w-2xl leading-8 text-gray-400">
+              Your website is built with modern technologies like{" "}
+              <span className="font-semibold text-white">Next.js</span> and{" "}
+              <span className="font-semibold text-white">React</span>, the same
+              tools big companies use. So it loads fast, works perfectly on
+              mobile, and shows up better on Google.
+            </p>
+            <p className="mt-4 max-w-2xl leading-8 text-gray-400">
+              No technical headache for you. Tell me about your business, and I
+              take care of design, setup and launch, with a clear price and no
+              hidden charges.
+            </p>
+            <p className="mt-4 max-w-2xl font-semibold leading-8 text-white">
+              Your business deserves to be found. Let's get it online.
+            </p>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+              <span className="rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
+                Next.js
+              </span>
+              <span className="rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
+                React
+              </span>
+              <span className="rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
+                Mobile Friendly
+              </span>
+              <span className="rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
+                Basic SEO
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Pricing */}
@@ -303,23 +353,27 @@ export default function Home() {
           {[
             {
               name: "Starter",
-              price: "₹2,999",
+              price: "₹7,999",
+              delivery: "3–5 days",
               description: "For individuals and small businesses.",
               features: [
                 "One-page website",
                 "Mobile responsive",
                 "Contact section",
+                "WhatsApp chat button",
                 "Basic SEO",
               ],
             },
             {
               name: "Professional",
-              price: "₹6,999",
+              price: "₹14,999",
+              delivery: "7–10 days",
               description: "For growing businesses.",
               features: [
                 "Up to 5 pages",
                 "Modern custom design",
                 "Contact integration",
+                "Google Maps",
                 "Basic SEO",
                 "Deployment support",
               ],
@@ -327,12 +381,14 @@ export default function Home() {
             },
             {
               name: "Business Plus",
-              price: "₹9,999",
+              price: "₹29,999+",
+              delivery: "12–15 days",
               description: "For businesses needing more.",
               features: [
                 "Up to 7 pages",
                 "Custom design",
-                "Advanced sections",
+                "Custom features with Next.js / React",
+                "Advanced sections (booking, login, admin)",
                 "Basic SEO",
                 "Deployment support",
               ],
@@ -355,6 +411,9 @@ export default function Home() {
               <p className="mt-3 text-sm text-gray-400">{plan.description}</p>
               <p className="mt-8 text-4xl font-black">{plan.price}</p>
               <p className="mt-1 text-sm text-gray-500">Starting price</p>
+              <p className="mt-4 inline-block rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-1 text-sm font-semibold text-violet-200">
+                ⏱ Delivery: {plan.delivery}
+              </p>
               <div className="my-8 h-px bg-white/10" />
               <ul className="space-y-4 text-sm text-gray-300">
                 {plan.features.map((feature) => (
@@ -374,7 +433,8 @@ export default function Home() {
         <p className="mt-6 text-center text-xs leading-6 text-gray-500">
           Indicative starting prices only. Domain, hosting, premium services and
           additional requirements may cost extra. Final pricing depends on
-          project scope.
+          project scope. Delivery time starts after we receive your content and
+          advance payment.
         </p>
       </section>
 
@@ -477,6 +537,48 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          {/* Maintenance Plans */}
+          <div className="mt-12 grid gap-4 border-t border-white/10 pt-10 md:grid-cols-3">
+            {[
+              {
+                name: "Basic",
+                price: "₹1,499",
+                unit: "/month",
+                description:
+                  "3 small text or image changes per month, backup and website checks.",
+              },
+              {
+                name: "Standard",
+                price: "₹2,999",
+                unit: "/month",
+                description:
+                  "8 changes per month, priority support and a monthly report.",
+              },
+              {
+                name: "Yearly",
+                price: "₹14,999",
+                unit: "/year",
+                description: "Basic plan for a full year, with 2 months free.",
+              },
+            ].map((plan) => (
+              <div
+                key={plan.name}
+                className="rounded-2xl border border-white/10 bg-white/[0.05] p-6"
+              >
+                <h3 className="text-lg font-bold">{plan.name}</h3>
+                <p className="mt-3 text-3xl font-black">
+                  {plan.price}
+                  <span className="text-sm font-medium text-gray-400">
+                    {plan.unit}
+                  </span>
+                </p>
+                <p className="mt-3 text-sm leading-6 text-gray-400">
+                  {plan.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -495,10 +597,28 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Direct Contact */}
+        <div className="mx-auto mt-10 flex max-w-3xl flex-wrap justify-center gap-3">
+          <a
+            href="https://wa.me/919014467699"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-green-500 px-6 py-3 text-sm font-bold text-white transition hover:scale-105 hover:bg-green-600"
+          >
+            💬 Chat on WhatsApp
+          </a>
+          <a
+            href="mailto:Prabhakarsamitipoguj@gmail.com"
+            className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/20"
+          >
+            ✉️ Prabhakarsamitipoguj@gmail.com
+          </a>
+        </div>
+
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
-          className="mx-auto mt-12 grid max-w-2xl gap-5 rounded-2xl bg-white p-6 text-gray-900 shadow-2xl md:p-8"
+          className="mx-auto mt-10 grid max-w-2xl gap-5 rounded-2xl bg-white p-6 text-gray-900 shadow-2xl md:p-8"
         >
           <input
             type="hidden"
@@ -634,8 +754,31 @@ export default function Home() {
       </a>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        <div className="mb-4 flex flex-wrap items-center justify-center gap-6">
+      <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-gray-500">
+        <p className="text-lg font-black text-white">
+          Vebnora<span className="text-violet-400">.</span>
+        </p>
+        <p className="mt-2 text-gray-400">
+          S. Prabhakar · Founder & Web Developer
+        </p>
+        <p className="mt-1 text-gray-400">Hyderabad, Telangana, India</p>
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+          <a
+            href="https://wa.me/919014467699"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 transition hover:text-violet-400"
+          >
+            💬 WhatsApp
+          </a>
+          <a
+            href="mailto:Prabhakarsamitipoguj@gmail.com"
+            className="text-gray-300 transition hover:text-violet-400"
+          >
+            ✉️ Prabhakarsamitipoguj@gmail.com
+          </a>
+        </div>
+        <div className="mb-4 mt-5 flex flex-wrap items-center justify-center gap-6">
           <Link
             href="/privacy"
             className="text-gray-400 transition hover:text-violet-400"
