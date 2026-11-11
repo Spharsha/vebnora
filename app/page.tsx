@@ -4,9 +4,14 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#080b18] text-white">
       {/* Navbar */}
+
       <nav className="relative z-50 mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Link href="/" className="text-2xl font-black tracking-tight">
-          Vebnora<span className="text-violet-400">.</span>
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/images/vebnora-logo.png"
+            alt="Vebnora"
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -755,8 +760,12 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-gray-500">
-        <p className="text-lg font-black text-white">
-          Vebnora<span className="text-violet-400">.</span>
+        <p className="flex justify-center">
+          <img
+            src="/images/vebnora-logo.png"
+            alt="Vebnora"
+            className="h-12 w-auto object-contain"
+          />
         </p>
         <p className="mt-2 text-gray-400">
           S. Prabhakar · Founder & Web Developer
