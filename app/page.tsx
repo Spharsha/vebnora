@@ -762,7 +762,7 @@ export default function Home() {
       <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-gray-500">
         <p className="flex justify-center">
           <img
-            src="/images/vebnora-logo.png"
+            src="/images/Vebnora-logo.png"
             alt="Vebnora"
             className="h-12 w-auto object-contain"
           />
