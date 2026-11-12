@@ -1,62 +1,121 @@
 import Link from "next/link";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
+
+const portfolio = [
+  {
+    plan: "Starter Plan",
+    pages: "1 to 3 pages",
+    demos: [
+      {
+        title: "Ember & Olive",
+        category: "Restaurant · Hospitality",
+        image: "/images/ember.png",
+        description:
+          "A stylish restaurant website with menu and reservation experience.",
+        url: "https://ember-olive.prabhakarsamitipoguj.workers.dev",
+        gradient: "from-orange-600/40 to-red-950/70",
+      },
+      {
+        title: "Lexora Legal",
+        category: "Legal · Law Firm Website",
+        image: "/images/lexora.png",
+        description:
+          "A refined law firm website highlighting legal services and client enquiries.",
+        url: "https://lexora-legalcd.prabhakarsamitipoguj.workers.dev",
+        gradient: "from-slate-500/40 to-indigo-950/70",
+      },
+    ],
+  },
+  {
+    plan: "Professional Plan",
+    pages: "Up to 5 pages",
+    demos: [
+      {
+        title: "Auren Interiors",
+        category: "Interior Design · Business Website",
+        image: "/images/auren.png",
+        description:
+          "An elegant digital presence for an interior design studio.",
+        url: "https://vebnora-interior-demo.prabhakarsamitipoguj.workers.dev",
+        gradient: "from-amber-600/40 to-orange-950/70",
+      },
+      {
+        title: "Everwell Dental Studio",
+        category: "Healthcare · Dental Website",
+        image: "/images/everwell.png",
+        description:
+          "A welcoming dental clinic website presenting treatments and appointments.",
+        url: "https://everwell-dental.prabhakarsamitipoguj.workers.dev",
+        gradient: "from-cyan-600/40 to-blue-950/70",
+      },
+    ],
+  },
+  {
+    plan: "Business Plus Plan",
+    pages: "Up to 7 pages",
+    demos: [
+      {
+        title: "Havenstone Realty",
+        category: "Real Estate · Property Website",
+        image: "/images/havenstone.png",
+        description:
+          "A professional real estate website designed to present properties.",
+        url: "https://havenstone-realty.prabhakarsamitipoguj.workers.dev",
+        gradient: "from-emerald-600/40 to-green-950/70",
+      },
+      {
+        title: "Aurelia International School",
+        category: "Education · School Website",
+        image: "/images/aurelia.png",
+        description:
+          "A modern school website showcasing learning, campus facilities and admissions.",
+        url: "https://private-school-democd.prabhakarsamitipoguj.workers.dev",
+        gradient: "from-purple-600/50 to-violet-950/70",
+      },
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: "How long will my website take?",
+    a: "Starter takes 4–6 days, Professional 7–10 days and Business Plus 12–15 days. The time starts after we receive your content and the advance payment.",
+  },
+  {
+    q: "What do I need to give you?",
+    a: "Your business name, logo (if you have one), a few photos, your services or products, contact details and your address. If something is missing, I will guide you.",
+  },
+  {
+    q: "How does payment work?",
+    a: "We start with a 50% advance. The remaining amount is paid before your website goes live.",
+  },
+  {
+    q: "Are domain and hosting included?",
+    a: "No, they are extra. A domain usually costs around ₹800–1,200 per year and is bought in your own name. For most small business websites, hosting costs very little. I will explain the options and help you set it up.",
+  },
+  {
+    q: "Can I ask for changes after launch?",
+    a: "Yes. Small changes are free for 7 days after launch. After that, our maintenance plans take care of updates.",
+  },
+  {
+    q: "Will my website work on mobile phones?",
+    a: "Yes. Every website is designed to look neat and load fast on phones, tablets and laptops.",
+  },
+  {
+    q: "Will my website show up on Google?",
+    a: "Basic SEO is included, which helps Google understand your website. Rankings depend on competition and time, so no one can promise a number one position.",
+  },
+  {
+    q: "Can you add features like booking or login?",
+    a: "Yes. Features like appointment booking, login and admin sections are part of the Business Plus plan.",
+  },
+];
 
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#080b18] text-white">
-      {/* Navbar */}
-
-      <nav className="relative z-50 mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Link href="/" className="flex items-center gap-3">
-          <img
-            src="/images/Vebnora-logo.png"
-            alt="Vebnora"
-            className="h-12 w-auto object-contain"
-          />
-        </Link>
-
-        {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 text-sm text-gray-300 md:flex">
-          <a href="#services" className="hover:text-white">
-            Services
-          </a>
-          <a href="#work" className="hover:text-white">
-            Samples (Demo)
-          </a>
-          <a href="#about" className="hover:text-white">
-            About
-          </a>
-          <a href="#pricing" className="hover:text-white">
-            Pricing
-          </a>
-          <a href="#contact" className="hover:text-white">
-            Contact
-          </a>
-        </div>
-
-        {/* Desktop Contact Button */}
-        <a
-          href="#contact"
-          className="hidden rounded-full bg-white px-5 py-3 text-sm font-bold text-gray-900 transition hover:bg-violet-200 md:inline-block"
-        >
-          Let's Talk ↗
-        </a>
-
-        {/* Mobile Navigation */}
-        <details className="relative md:hidden">
-          <summary className="cursor-pointer list-none rounded-xl border border-white/20 px-4 py-2 text-sm font-semibold">
-            Menu ☰
-          </summary>
-          <div className="absolute right-0 top-14 z-50 w-52 rounded-2xl border border-white/10 bg-[#15172a] p-4 shadow-xl">
-            <div className="flex flex-col gap-4 text-sm text-gray-300">
-              <a href="#services">Services</a>
-              <a href="#work">Samples (Demo)</a>
-              <a href="#about">About</a>
-              <a href="#pricing">Pricing</a>
-              <a href="#contact">Contact</a>
-            </div>
-          </div>
-        </details>
-      </nav>
+      <SiteHeader />
 
       {/* Hero Section */}
       <section className="relative mx-auto flex min-h-[650px] max-w-7xl flex-col items-center justify-center px-6 py-24 text-center">
@@ -170,106 +229,59 @@ export default function Home() {
         </h2>
 
         <p className="mt-5 max-w-2xl leading-7 text-gray-400">
-          Explore our website concepts across different industries. Each project
-          demonstrates our approach to modern design and user experience.
+          Explore our website concepts across different industries. Each demo is
+          built to show what is possible in each plan.
         </p>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              number: "Featured Project 01",
-              title: "Aurelia International School",
-              category: "Education · School Website",
-              image: "/images/aurelia.png",
-              description:
-                "A modern school website showcasing learning, campus facilities and admissions.",
-              url: "https://private-school-democd.prabhakarsamitipoguj.workers.dev",
-              gradient: "from-purple-600/50 to-violet-950/70",
-            },
-            {
-              number: "Live Demo 02",
-              title: "Auren Interiors",
-              category: "Interior Design · Business Website",
-              image: "/images/auren.png",
-              description:
-                "An elegant digital presence for an interior design studio.",
-              url: "https://vebnora-interior-demo.prabhakarsamitipoguj.workers.dev",
-              gradient: "from-amber-600/40 to-orange-950/70",
-            },
-            {
-              number: "Live Demo 03",
-              title: "Ember & Olive",
-              category: "Restaurant · Hospitality",
-              image: "/images/ember.png",
-              description:
-                "A stylish restaurant website with menu and reservation experience.",
-              url: "https://ember-olive.prabhakarsamitipoguj.workers.dev",
-              gradient: "from-orange-600/40 to-red-950/70",
-            },
-            {
-              number: "Live Demo 04",
-              title: "Havenstone Realty",
-              category: "Real Estate · Property Website",
-              image: "/images/havenstone.png",
-              description:
-                "A professional real estate website designed to present properties.",
-              url: "https://havenstone-realty.prabhakarsamitipoguj.workers.dev",
-              gradient: "from-emerald-600/40 to-green-950/70",
-            },
-            {
-              number: "Live Demo 05",
-              title: "Everwell Dental Studio",
-              category: "Healthcare · Dental Website",
-              image: "/images/everwell.png",
-              description:
-                "A welcoming dental clinic website presenting treatments and appointments.",
-              url: "https://everwell-dental.prabhakarsamitipoguj.workers.dev",
-              gradient: "from-cyan-600/40 to-blue-950/70",
-            },
-            {
-              number: "Live Demo 06",
-              title: "Lexora Legal",
-              category: "Legal · Law Firm Website",
-              image: "/images/lexora.png",
-              description:
-                "A refined law firm website highlighting legal services and client enquiries.",
-              url: "https://lexora-legalcd.prabhakarsamitipoguj.workers.dev",
-              gradient: "from-slate-500/40 to-indigo-950/70",
-            },
-          ].map((project) => (
-            <a
-              key={project.number}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`group flex min-h-72 flex-col justify-end overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br ${project.gradient} p-6 transition duration-300 hover:-translate-y-2 hover:border-violet-400/50`}
-            >
-              {project.image && (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="mb-6 h-44 w-full rounded-2xl object-cover"
-                />
-              )}
+        <div className="mt-12 space-y-16">
+          {portfolio.map((group) => (
+            <div key={group.plan}>
+              <div className="mb-6 flex flex-wrap items-center gap-3">
+                <h3 className="text-2xl font-bold">{group.plan} Demos</h3>
+                <span className="rounded-full border border-violet-400/30 bg-violet-400/10 px-3 py-1 text-xs font-semibold text-violet-200">
+                  {group.pages}
+                </span>
+              </div>
 
-              <p className="text-sm font-semibold text-violet-200">
-                {project.number}
-              </p>
+              <div className="grid gap-6 md:grid-cols-2">
+                {group.demos.map((project) => (
+                  <a
+                    key={project.title}
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`group flex min-h-72 flex-col justify-end overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br ${project.gradient} p-6 transition duration-300 hover:-translate-y-2 hover:border-violet-400/50`}
+                  >
+                    <div className="mb-6 h-48 overflow-hidden rounded-2xl">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                      />
+                    </div>
 
-              <h3 className="mt-3 text-2xl font-bold">{project.title}</h3>
+                    <p className="text-sm font-semibold text-violet-200">
+                      Live Demo
+                    </p>
 
-              <p className="mt-2 text-xs font-medium uppercase tracking-wider text-gray-300">
-                {project.category}
-              </p>
+                    <h4 className="mt-3 text-2xl font-bold">{project.title}</h4>
 
-              <p className="mt-4 text-sm leading-6 text-gray-300">
-                {project.description}
-              </p>
+                    <p className="mt-2 text-xs font-medium uppercase tracking-wider text-gray-300">
+                      {project.category}
+                    </p>
 
-              <span className="mt-6 inline-block text-sm font-bold text-violet-200 transition group-hover:translate-x-2">
-                Visit Website ↗
-              </span>
-            </a>
+                    <p className="mt-4 text-sm leading-6 text-gray-300">
+                      {project.description}
+                    </p>
+
+                    <span className="mt-6 inline-block text-sm font-bold text-violet-200 transition group-hover:translate-x-2">
+                      Visit Website ↗
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -281,7 +293,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-3xl border border-violet-400/30 bg-white/[0.04] p-2">
               <img
                 src="/images/founder.jpg"
-                alt="S. Prabhakar, Founder and Web Developer at Vebnora"
+                alt="S J Prabhakar, Founder and Web Developer at Vebnora"
                 className="aspect-square w-full rounded-2xl object-cover"
               />
             </div>
@@ -292,7 +304,7 @@ export default function Home() {
               Meet the Founder
             </p>
             <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-              S. Prabhakar
+              S J Prabhakar
             </h2>
             <p className="mt-3 text-lg font-semibold text-violet-300">
               Founder & Web Developer · Hyderabad
@@ -336,111 +348,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Pricing */}
-      <section id="pricing" className="mx-auto max-w-7xl px-6 py-24">
-        <div className="text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
-            Simple Pricing
-          </p>
-          <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-            Plans That Fit Your{" "}
-            <span className="text-violet-400">Business.</span>
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-gray-400">
-            Flexible website packages to help your business build a strong
-            online presence.
-          </p>
-        </div>
-
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {[
-            {
-              name: "Starter",
-              price: "₹7,999",
-              delivery: "3–5 days",
-              description: "For individuals and small businesses.",
-              features: [
-                "One-page website",
-                "Mobile responsive",
-                "Contact section",
-                "WhatsApp chat button",
-                "Basic SEO",
-              ],
-            },
-            {
-              name: "Professional",
-              price: "₹14,999",
-              delivery: "7–10 days",
-              description: "For growing businesses.",
-              features: [
-                "Up to 5 pages",
-                "Modern custom design",
-                "Contact integration",
-                "Google Maps",
-                "Basic SEO",
-                "Deployment support",
-              ],
-              popular: true,
-            },
-            {
-              name: "Business Plus",
-              price: "₹29,999+",
-              delivery: "12–15 days",
-              description: "For businesses needing more.",
-              features: [
-                "Up to 7 pages",
-                "Custom design",
-                "Custom features with Next.js / React",
-                "Advanced sections (booking, login, admin)",
-                "Basic SEO",
-                "Deployment support",
-              ],
-            },
-          ].map((plan) => (
-            <div
-              key={plan.name}
-              className={`relative rounded-3xl border p-8 ${
-                plan.popular
-                  ? "border-violet-400 bg-violet-500/10"
-                  : "border-white/10 bg-white/[0.04]"
-              }`}
-            >
-              {plan.popular && (
-                <span className="absolute right-6 top-6 rounded-full bg-violet-500 px-3 py-1 text-xs font-bold">
-                  POPULAR
-                </span>
-              )}
-              <h3 className="text-2xl font-bold">{plan.name}</h3>
-              <p className="mt-3 text-sm text-gray-400">{plan.description}</p>
-              <p className="mt-8 text-4xl font-black">{plan.price}</p>
-              <p className="mt-1 text-sm text-gray-500">Starting price</p>
-              <p className="mt-4 inline-block rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-1 text-sm font-semibold text-violet-200">
-                ⏱ Delivery: {plan.delivery}
-              </p>
-              <div className="my-8 h-px bg-white/10" />
-              <ul className="space-y-4 text-sm text-gray-300">
-                {plan.features.map((feature) => (
-                  <li key={feature}>✓ {feature}</li>
-                ))}
-              </ul>
-              <a
-                href="#contact"
-                className="mt-10 block rounded-full bg-white px-5 py-3 text-center font-bold text-gray-900 transition hover:bg-violet-200"
-              >
-                Get Started ↗
-              </a>
-            </div>
-          ))}
-        </div>
-
-        <p className="mt-6 text-center text-xs leading-6 text-gray-500">
-          Indicative starting prices only. Domain, hosting, premium services and
-          additional requirements may cost extra. Final pricing depends on
-          project scope. Delivery time starts after we receive your content and
-          advance payment.
-        </p>
       </section>
 
       {/* Our Process */}
@@ -514,12 +421,12 @@ export default function Home() {
                 maintenance to help keep your website updated, secure and
                 running smoothly.
               </p>
-              <a
-                href="#contact"
+              <Link
+                href="/pricing#maintenance"
                 className="mt-8 inline-block rounded-full bg-white px-7 py-4 font-bold text-gray-900 transition hover:bg-violet-200"
               >
-                Ask About Maintenance ↗
-              </a>
+                View Maintenance Plans ↗
+              </Link>
             </div>
 
             <div className="space-y-4">
@@ -542,48 +449,44 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Maintenance Plans */}
-          <div className="mt-12 grid gap-4 border-t border-white/10 pt-10 md:grid-cols-3">
-            {[
-              {
-                name: "Basic",
-                price: "₹1,499",
-                unit: "/month",
-                description:
-                  "3 small text or image changes per month, backup and website checks.",
-              },
-              {
-                name: "Standard",
-                price: "₹2,999",
-                unit: "/month",
-                description:
-                  "8 changes per month, priority support and a monthly report.",
-              },
-              {
-                name: "Yearly",
-                price: "₹14,999",
-                unit: "/year",
-                description: "Basic plan for a full year, with 2 months free.",
-              },
-            ].map((plan) => (
-              <div
-                key={plan.name}
-                className="rounded-2xl border border-white/10 bg-white/[0.05] p-6"
-              >
-                <h3 className="text-lg font-bold">{plan.name}</h3>
-                <p className="mt-3 text-3xl font-black">
-                  {plan.price}
-                  <span className="text-sm font-medium text-gray-400">
-                    {plan.unit}
-                  </span>
-                </p>
-                <p className="mt-3 text-sm leading-6 text-gray-400">
-                  {plan.description}
-                </p>
-              </div>
-            ))}
-          </div>
+      {/* FAQ */}
+      <section id="faq" className="mx-auto max-w-4xl px-6 py-24">
+        <div className="text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-violet-400">
+            FAQ
+          </p>
+          <h2 className="mt-4 text-4xl font-bold md:text-5xl">
+            Questions? <span className="text-violet-400">Answered.</span>
+          </h2>
+        </div>
+
+        <div className="mt-12 space-y-4">
+          {faqs.map((faq) => (
+            <details
+              key={faq.q}
+              className="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 open:border-violet-400/40"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold [&::-webkit-details-marker]:hidden">
+                {faq.q}
+                <span
+                  aria-hidden="true"
+                  className="shrink-0 text-2xl text-violet-400 group-open:hidden"
+                >
+                  +
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="hidden shrink-0 text-2xl text-violet-400 group-open:inline"
+                >
+                  −
+                </span>
+              </summary>
+              <p className="mt-4 leading-7 text-gray-400">{faq.a}</p>
+            </details>
+          ))}
         </div>
       </section>
 
@@ -740,69 +643,7 @@ export default function Home() {
         </form>
       </section>
 
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/919014467699"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition hover:scale-110 hover:bg-green-600"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="h-8 w-8"
-        >
-          <path d="M12 2a9.9 9.9 0 0 0-8.5 15l-1 4 4.1-1.1A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.4.6.6-2.3-.2-.4A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.8 3.4.5.2.9.4 1.2.4.5.2 1 .2 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z" />
-        </svg>
-      </a>
-
-      {/* Footer */}
-      <footer className="border-t border-white/10 px-6 py-10 text-center text-sm text-gray-500">
-        <p className="flex justify-center">
-          <img
-            src="/images/Vebnora-logo.png"
-            alt="Vebnora"
-            className="h-12 w-auto object-contain"
-          />
-        </p>
-        <p className="mt-2 text-gray-400">
-          S. Prabhakar · Founder & Web Developer
-        </p>
-        <p className="mt-1 text-gray-400">Hyderabad, Telangana, India</p>
-        <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-          <a
-            href="https://wa.me/919014467699"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 transition hover:text-violet-400"
-          >
-            💬 WhatsApp
-          </a>
-          <a
-            href="mailto:Prabhakarsamitipoguj@gmail.com"
-            className="text-gray-300 transition hover:text-violet-400"
-          >
-            ✉️ Prabhakarsamitipoguj@gmail.com
-          </a>
-        </div>
-        <div className="mb-4 mt-5 flex flex-wrap items-center justify-center gap-6">
-          <Link
-            href="/privacy"
-            className="text-gray-400 transition hover:text-violet-400"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            href="/terms"
-            className="text-gray-400 transition hover:text-violet-400"
-          >
-            Terms & Conditions
-          </Link>
-        </div>
-        © {new Date().getFullYear()} Vebnora. All rights reserved.
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

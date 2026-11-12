@@ -22,9 +22,7 @@ const siteDescription =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   icons: {
-    icon: "/images/Vebnora-logo.png",
-    shortcut: "/images/Vebnora-logo.png",
-    apple: "/images/Vebnora-logo.png",
+    icon: "/images/vebnora-icon.svg",
   },
 
   title: "Vebnora | Professional Website Design",
