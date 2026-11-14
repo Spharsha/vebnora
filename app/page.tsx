@@ -136,7 +136,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-gray-400 md:text-lg">
+          <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-gray-300 md:text-lg">
             We help businesses grow online with modern, beautiful and
             high-performing websites designed to turn visitors into customers.
           </p>
@@ -158,16 +158,16 @@ export default function Home() {
 
           <div className="mt-20 grid grid-cols-1 gap-8 border-t border-white/10 pt-10 sm:grid-cols-3">
             <div>
-              <h3 className="text-3xl font-bold">Modern</h3>
-              <p className="mt-2 text-sm text-gray-400">Creative Design</p>
+              <h2 className="text-3xl font-bold">Modern</h2>
+              <p className="mt-2 text-sm text-gray-300">Creative Design</p>
             </div>
             <div>
-              <h3 className="text-3xl font-bold">Responsive</h3>
-              <p className="mt-2 text-sm text-gray-400">All Devices</p>
+              <h2 className="text-3xl font-bold">Responsive</h2>
+              <p className="mt-2 text-sm text-gray-300">All Devices</p>
             </div>
             <div>
-              <h3 className="text-3xl font-bold">Reliable</h3>
-              <p className="mt-2 text-sm text-gray-400">Ongoing Support</p>
+              <h2 className="text-3xl font-bold">Reliable</h2>
+              <p className="mt-2 text-sm text-gray-300">Ongoing Support</p>
             </div>
           </div>
         </div>
@@ -210,7 +210,7 @@ export default function Home() {
             >
               <span className="text-sm text-violet-400">{service.number}</span>
               <h3 className="mt-8 text-2xl font-bold">{service.title}</h3>
-              <p className="mt-4 leading-7 text-gray-400">
+              <p className="mt-4 leading-7 text-gray-300">
                 {service.description}
               </p>
             </div>
@@ -228,7 +228,7 @@ export default function Home() {
           Ideas Into <span className="text-violet-400">Experiences.</span>
         </h2>
 
-        <p className="mt-5 max-w-2xl leading-7 text-gray-400">
+        <p className="mt-5 max-w-2xl leading-7 text-gray-300">
           Explore our website concepts across different industries. Each demo is
           built to show what is possible in each plan.
         </p>
@@ -319,14 +319,14 @@ export default function Home() {
               more customers online: shops, clinics, salons, restaurants and
               more.
             </p>
-            <p className="mt-4 max-w-2xl leading-8 text-gray-400">
+            <p className="mt-4 max-w-2xl leading-8 text-gray-300">
               Your website is built with modern technologies like{" "}
               <span className="font-semibold text-white">Next.js</span> and{" "}
               <span className="font-semibold text-white">React</span>, the same
               tools big companies use. So it loads fast, works perfectly on
               mobile, and shows up better on Google.
             </p>
-            <p className="mt-4 max-w-2xl leading-8 text-gray-400">
+            <p className="mt-4 max-w-2xl leading-8 text-gray-300">
               No technical headache for you. Tell me about your business, and I
               take care of design, setup and launch, with a clear price and no
               hidden charges.
@@ -398,7 +398,7 @@ export default function Home() {
                 {step.number}
               </span>
               <h3 className="mt-6 text-xl font-bold">{step.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-gray-400">
+              <p className="mt-3 text-sm leading-7 text-gray-300">
                 {step.description}
               </p>
             </div>
@@ -487,7 +487,7 @@ export default function Home() {
                   −
                 </span>
               </summary>
-              <p className="mt-4 leading-7 text-gray-400">{faq.a}</p>
+              <p className="mt-4 leading-7 text-gray-300">{faq.a}</p>
             </details>
           ))}
         </div>
@@ -514,7 +514,7 @@ export default function Home() {
             href="https://wa.me/919014467699"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-green-500 px-6 py-3 text-sm font-bold text-white transition hover:scale-105 hover:bg-green-600"
+            className="rounded-full bg-green-700 px-6 py-3 text-sm font-bold text-white transition hover:scale-105 hover:bg-green-600"
           >
             💬 Chat on WhatsApp
           </a>
@@ -640,7 +640,7 @@ export default function Home() {
             Send Enquiry →
           </button>
 
-          <p className="text-center text-xs text-gray-500">
+          <p className="text-center text-xs text-gray-600">
             We will get back to you as soon as possible.
           </p>
         </form>
