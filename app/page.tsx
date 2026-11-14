@@ -10,7 +10,7 @@ const portfolio = [
       {
         title: "Ember & Olive",
         category: "Restaurant · Hospitality",
-        image: "/images/ember.webp",
+        image: "/images/ember-optimized.webp",
         description:
           "A stylish restaurant website with menu and reservation experience.",
         url: "https://ember-olive.prabhakarsamitipoguj.workers.dev",
@@ -19,7 +19,7 @@ const portfolio = [
       {
         title: "Lexora Legal",
         category: "Legal · Law Firm Website",
-        image: "/images/lexora.webp",
+        image: "/images/lexora-optimized.webp",
         description:
           "A refined law firm website highlighting legal services and client enquiries.",
         url: "https://lexora-legalcd.prabhakarsamitipoguj.workers.dev",
