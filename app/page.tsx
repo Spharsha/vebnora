@@ -10,7 +10,7 @@ const portfolio = [
       {
         title: "Ember & Olive",
         category: "Restaurant · Hospitality",
-        image: "/images/ember.png",
+        image: "/images/ember.webp",
         description:
           "A stylish restaurant website with menu and reservation experience.",
         url: "https://ember-olive.prabhakarsamitipoguj.workers.dev",
@@ -19,7 +19,7 @@ const portfolio = [
       {
         title: "Lexora Legal",
         category: "Legal · Law Firm Website",
-        image: "/images/lexora.png",
+        image: "/images/lexora.webp",
         description:
           "A refined law firm website highlighting legal services and client enquiries.",
         url: "https://lexora-legalcd.prabhakarsamitipoguj.workers.dev",
@@ -34,7 +34,7 @@ const portfolio = [
       {
         title: "Auren Interiors",
         category: "Interior Design · Business Website",
-        image: "/images/auren.png",
+        image: "/images/auren.webp",
         description:
           "An elegant digital presence for an interior design studio.",
         url: "https://vebnora-interior-demo.prabhakarsamitipoguj.workers.dev",
@@ -43,7 +43,7 @@ const portfolio = [
       {
         title: "Everwell Dental Studio",
         category: "Healthcare · Dental Website",
-        image: "/images/everwell.png",
+        image: "/images/everwell.webp",
         description:
           "A welcoming dental clinic website presenting treatments and appointments.",
         url: "https://everwell-dental.prabhakarsamitipoguj.workers.dev",
@@ -58,7 +58,7 @@ const portfolio = [
       {
         title: "Havenstone Realty",
         category: "Real Estate · Property Website",
-        image: "/images/havenstone.png",
+        image: "/images/havenstone.webp",
         description:
           "A professional real estate website designed to present properties.",
         url: "https://havenstone-realty.prabhakarsamitipoguj.workers.dev",
@@ -67,7 +67,7 @@ const portfolio = [
       {
         title: "Aurelia International School",
         category: "Education · School Website",
-        image: "/images/aurelia.png",
+        image: "/images/aurelia.webp",
         description:
           "A modern school website showcasing learning, campus facilities and admissions.",
         url: "https://private-school-democd.prabhakarsamitipoguj.workers.dev",
@@ -252,7 +252,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className={`group flex min-h-72 flex-col justify-end overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br ${project.gradient} p-6 transition duration-300 hover:-translate-y-2 hover:border-violet-400/50`}
                   >
-                    <div className="mb-6 h-48 overflow-hidden rounded-2xl">
+                    <div className="mb-6 aspect-video overflow-hidden rounded-2xl">
                       <img
                         src={project.image}
                         alt={project.title}
@@ -294,6 +294,9 @@ export default function Home() {
               <img
                 src="/images/founder.jpg"
                 alt="S J Prabhakar, Founder and Web Developer at Vebnora"
+                width={700}
+                height={700}
+                loading="lazy"
                 className="aspect-square w-full rounded-2xl object-cover"
               />
             </div>
