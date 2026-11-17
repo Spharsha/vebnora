@@ -27,6 +27,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing | Vebnora",
+    description:
+      "Explore Vebnora website packages and maintenance plans with clear pricing for small businesses and startups.",
+    images: ["/images/og-image.png"],
+  },
 };
 
 const packages = [
