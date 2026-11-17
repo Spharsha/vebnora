@@ -40,7 +40,7 @@ const packages = [
   },
   {
     name: "Business Plus",
-    price: "₹34,999",
+    price: "₹34,999+",
     delivery: "12–15 days",
     description: "For businesses needing more.",
     features: [
