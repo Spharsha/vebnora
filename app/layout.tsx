@@ -58,6 +58,30 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "Vebnora",
+      url: siteUrl,
+      logo: `${siteUrl}/images/vebnora-icon.svg`,
+      description: siteDescription,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      name: "Vebnora",
+      url: siteUrl,
+      publisher: {
+        "@id": `${siteUrl}/#organization`,
+      },
+      inLanguage: "en-IN",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -68,7 +92,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
