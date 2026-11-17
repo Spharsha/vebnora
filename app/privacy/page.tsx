@@ -7,6 +7,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/privacy",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://vebnora.in/privacy",
+    siteName: "Vebnora",
+    title: "Privacy Policy | Vebnora",
+    description:
+      "Read Vebnora's Privacy Policy to understand how we collect, use, protect, and manage personal information submitted through our website.",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Vebnora Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Vebnora",
+    description:
+      "Read Vebnora's Privacy Policy to understand how we collect, use, protect, and manage personal information submitted through our website.",
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function PrivacyPolicy() {

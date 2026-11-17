@@ -8,6 +8,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/terms",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://vebnora.in/terms",
+    siteName: "Vebnora",
+    title: "Terms & Conditions | Vebnora",
+    description:
+      "Read Vebnora's Terms and Conditions covering website design services, project pricing, payments, revisions, cancellations, refunds, ownership and support.",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Vebnora Terms and Conditions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | Vebnora",
+    description:
+      "Read Vebnora's Terms and Conditions covering website design services, project pricing, payments, revisions, cancellations, refunds, ownership and support.",
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function TermsPage() {
