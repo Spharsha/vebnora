@@ -3,9 +3,9 @@ import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
 export const metadata: Metadata = {
-  title: "Vebnora | Professional Website Design Services",
+  title: "Vebnora | Website Design & Development Services in India",
   description:
-    "Looking for a professional business website? Vebnora creates modern, responsive and SEO-friendly websites for small businesses, clinics, restaurants and startups in India.",
+    "Vebnora builds professional, mobile-friendly and SEO-friendly websites for small businesses, clinics, restaurants and startups across India. Get a website designed for your business.",
   alternates: {
     canonical: "/",
   },
@@ -135,18 +135,19 @@ export default function Home() {
           </span>
 
           <h1 className="mx-auto mt-8 max-w-5xl text-5xl font-black leading-tight tracking-tight sm:text-6xl md:text-7xl">
-            We Build Websites
+            We Design Professional Websites
             <br />
-            That Make Your
+            That Help Your
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-violet-400 to-pink-400 bg-clip-text text-transparent">
-              Business Stand Out.
+              Business Grow.
             </span>
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-gray-300 md:text-lg">
-            We help businesses grow online with modern, beautiful and
-            high-performing websites designed to turn visitors into customers.
+            We provide professional website design and development services
+            across India, creating modern, mobile-friendly websites for small
+            businesses, startups, clinics, restaurants and growing brands.
           </p>
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -187,8 +188,8 @@ export default function Home() {
           What We Do
         </p>
         <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-          Digital Solutions for
-          <span className="text-violet-400"> Your Growth.</span>
+          Website Design Services
+          <span className="text-violet-400"> for Your Business.</span>
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -197,19 +198,19 @@ export default function Home() {
               number: "01",
               title: "Business Websites",
               description:
-                "Professional websites that build trust and showcase your business.",
+                "Professional business website design to build trust, showcase your services and attract customers across India.",
             },
             {
               number: "02",
               title: "Landing Pages",
               description:
-                "Focused pages designed to present your services and generate enquiries.",
+                "High-converting landing page design to promote your products, services and business offers online.",
             },
             {
               number: "03",
               title: "Website Maintenance",
               description:
-                "Ongoing updates and support to keep your website running smoothly.",
+                "Reliable website maintenance services, including content updates, technical support and routine website checks.",
             },
           ].map((service) => (
             <div
@@ -233,12 +234,14 @@ export default function Home() {
         </p>
 
         <h2 className="mt-4 text-4xl font-bold md:text-5xl">
-          Ideas Into <span className="text-violet-400">Experiences.</span>
+          Website Design Portfolio
+          <span className="text-violet-400"> Across Industries.</span>
         </h2>
 
         <p className="mt-5 max-w-2xl leading-7 text-gray-300">
-          Explore our website concepts across different industries. Each demo is
-          built to show what is possible in each plan.
+          Explore our website design portfolio featuring business websites for
+          restaurants, law firms, interior designers, dental clinics, real
+          estate agencies and schools across different industries.
         </p>
 
         <div className="mt-12 space-y-16">
@@ -263,7 +266,7 @@ export default function Home() {
                     <div className="mb-6 aspect-video overflow-hidden rounded-2xl">
                       <img
                         src={project.image}
-                        alt={project.title}
+                        alt={`${project.title} website design portfolio preview`}
                         loading="lazy"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
@@ -318,21 +321,19 @@ export default function Home() {
               S J Prabhakar
             </h2>
             <p className="mt-3 text-lg font-semibold text-violet-300">
-              Founder & Web Developer · Hyderabad
+              Founder & Web Developer · India
             </p>
 
             <p className="mt-6 max-w-2xl leading-8 text-gray-300">
-              Hi, I'm Prabhakar, founder of Vebnora in Hyderabad. I build fast,
-              good-looking websites that help small businesses and startups get
-              more customers online: shops, clinics, salons, restaurants and
-              more.
+              Hi, I'm Prabhakar, founder of Vebnora, providing professional
+              website design services to businesses across India.
             </p>
             <p className="mt-4 max-w-2xl leading-8 text-gray-300">
               Your website is built with modern technologies like{" "}
               <span className="font-semibold text-white">Next.js</span> and{" "}
               <span className="font-semibold text-white">React</span>, the same
-              tools big companies use. So it loads fast, works perfectly on
-              mobile, and shows up better on Google.
+              tools big companies use. These tools help create fast, responsive
+              websites with a strong technical foundation for search engines.
             </p>
             <p className="mt-4 max-w-2xl leading-8 text-gray-300">
               No technical headache for you. Tell me about your business, and I

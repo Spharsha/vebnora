@@ -14,15 +14,19 @@ const geistMono = Geist_Mono({
 
 const siteUrl = "https://vebnora.in";
 
-const siteTitle = "Vebnora | Professional Website Design";
+const siteTitle = "Vebnora | Website Design & Development Services in India";
 
 const siteDescription =
-  "We help businesses grow online with modern, beautiful and high-performing websites designed to turn visitors into customers.";
+  "Vebnora builds professional, mobile-friendly and SEO-friendly websites for small businesses, clinics, restaurants and startups across India.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
-  title: siteTitle,
+  title: {
+    default: siteTitle,
+    template: "%s | Vebnora",
+  },
+
   description: siteDescription,
 
   icons: {
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Vebnora - Professional Website Design",
+        alt: "Vebnora - Website Design and Development Services in India",
       },
     ],
   },
