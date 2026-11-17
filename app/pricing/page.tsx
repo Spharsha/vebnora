@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Pricing | Vebnora",
   description:
     "Website packages and maintenance plans from Vebnora. Clear prices and delivery times for small businesses and startups.",
+  alternates: {
+    canonical: "/pricing",
+  },
 };
 
 const packages = [
