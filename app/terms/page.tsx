@@ -1,10 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions | Vebnora",
+  description:
+    "Read Vebnora's Terms and Conditions covering website design services, project pricing, payments, revisions, cancellations, refunds, ownership and support.",
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
   return (
     <main className="min-h-screen bg-[#171222] px-6 py-20 text-[#D8D0E5]">
       <div className="mx-auto max-w-4xl">
-        {/* Back to Home */}
         <Link
           href="/"
           className="inline-flex items-center text-sm text-violet-400 transition hover:text-violet-300"
@@ -12,7 +21,6 @@ export default function TermsPage() {
           ← Back to Home
         </Link>
 
-        {/* Header */}
         <div className="mt-12 border-b border-white/10 pb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-400">
             Vebnora
@@ -23,17 +31,17 @@ export default function TermsPage() {
           </h1>
 
           <p className="mt-5 text-sm text-gray-400">
-            Last Updated: November 8, 2026
+            Last Updated: November 17, 2026
           </p>
 
           <p className="mt-6 leading-8 text-gray-300">
             Welcome to Vebnora. These Terms & Conditions explain the terms under
-            which we provide website design, development and related services.
-            By requesting or purchasing our services, you agree to these terms.
+            which we provide website design, development and related digital
+            services. By requesting or purchasing our services, you agree to
+            these terms.
           </p>
         </div>
 
-        {/* 1 */}
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-violet-300">
             1. Our Services
@@ -41,12 +49,11 @@ export default function TermsPage() {
           <p className="mt-4 leading-8 text-gray-400">
             Vebnora provides website design, website development, landing pages,
             website maintenance and related digital services. The exact work,
-            features and deliverables will be agreed upon with each client
-            before a project begins.
+            features, timeline and deliverables will be agreed upon with each
+            client before a project begins.
           </p>
         </section>
 
-        {/* 2 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             2. Pricing and Payments
@@ -72,11 +79,10 @@ export default function TermsPage() {
           <p className="mt-5 leading-8 text-gray-400">
             Additional features or work outside the agreed project scope may
             involve extra charges. Such charges will be discussed with the
-            client before the additional work is started.
+            client and approved before the additional work begins.
           </p>
         </section>
 
-        {/* 3 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             3. Project Scope and Changes
@@ -87,26 +93,28 @@ export default function TermsPage() {
             scope may require additional time and payment.
           </p>
           <p className="mt-4 leading-8 text-gray-400">
-            We will communicate any significant changes in cost or delivery time
-            before proceeding with them.
+            Significant changes in cost or delivery time will be communicated to
+            the client before proceeding.
           </p>
         </section>
 
-        {/* 4 */}
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-violet-300">4. Revisions</h2>
+          <h2 className="text-2xl font-bold text-violet-300">
+            4. Revisions and Approval
+          </h2>
           <p className="mt-4 leading-8 text-gray-400">
             Reasonable design and content revisions within the agreed project
-            scope may be included. Major redesigns, new pages or additional
-            functionality may be treated as separate work and quoted separately.
+            scope may be included. The number and nature of included revisions
+            will be confirmed in the project proposal or written agreement.
           </p>
           <p className="mt-4 leading-8 text-gray-400">
-            The number and nature of included revisions will be confirmed in the
-            project proposal or written agreement.
+            Major redesigns, new pages or additional functionality may be
+            treated as separate work and quoted separately. The client is
+            responsible for reviewing the completed work and communicating
+            approval or requested changes.
           </p>
         </section>
 
-        {/* 5 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             5. Cancellations and Refunds
@@ -116,19 +124,25 @@ export default function TermsPage() {
             in writing as soon as possible.
           </p>
           <p className="mt-4 leading-8 text-gray-400">
-            Payments will be reviewed based on the work already completed, time
-            spent, and any non-recoverable costs or third-party expenses
-            incurred for the project.
+            If a project is cancelled, payments will be assessed based on the
+            work completed up to the cancellation date, time spent, and any
+            non-recoverable costs or third-party expenses incurred for that
+            project.
           </p>
           <p className="mt-4 leading-8 text-gray-400">
-            Any refund due for work not performed will be assessed fairly and in
-            accordance with applicable law and the written project agreement. No
-            blanket guarantee of a non-refundable advance payment is intended by
-            these terms.
+            Any amount paid for work already completed or costs already incurred
+            may be retained to the extent permitted by the agreed project terms
+            and applicable law. Any amount refundable for work not performed
+            will be assessed fairly.
+          </p>
+          <p className="mt-4 leading-8 text-gray-400">
+            Refund requests will be reviewed individually and handled in
+            accordance with applicable law and the written project agreement.
+            Nothing in this section removes any consumer rights that cannot
+            legally be excluded.
           </p>
         </section>
 
-        {/* 6 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             6. Domain and Hosting
@@ -145,7 +159,6 @@ export default function TermsPage() {
           </p>
         </section>
 
-        {/* 7 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             7. Client Responsibilities
@@ -157,11 +170,12 @@ export default function TermsPage() {
           </p>
           <p className="mt-4 leading-8 text-gray-400">
             Clients must ensure that they have the necessary rights or
-            permissions to use any materials they provide.
+            permissions to use any materials they provide. Delays in providing
+            required content, approvals or feedback may affect project
+            timelines.
           </p>
         </section>
 
-        {/* 8 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             8. Ownership and Handover
@@ -177,7 +191,6 @@ export default function TermsPage() {
           </p>
         </section>
 
-        {/* 9 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             9. Website Maintenance and Support
@@ -193,20 +206,23 @@ export default function TermsPage() {
           </p>
         </section>
 
-        {/* 10 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             10. Third-Party Services
           </h2>
           <p className="mt-4 leading-8 text-gray-400">
             Websites may use third-party services such as hosting providers,
-            payment services, email platforms and external integrations. Vebnora
-            is not responsible for outages, policy changes or service
-            interruptions caused by independent third-party providers.
+            payment services, email platforms and external integrations. Their
+            availability, pricing, policies and performance are controlled by
+            their respective providers.
+          </p>
+          <p className="mt-4 leading-8 text-gray-400">
+            Vebnora is not responsible for interruptions or changes caused by
+            independent third-party providers, except where liability cannot be
+            excluded under applicable law.
           </p>
         </section>
 
-        {/* 11 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
             11. Limitation of Liability
@@ -223,10 +239,21 @@ export default function TermsPage() {
           </p>
         </section>
 
-        {/* 12 */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-violet-300">
-            12. Changes to These Terms
+            12. Applicable Law
+          </h2>
+          <p className="mt-4 leading-8 text-gray-400">
+            These Terms & Conditions are subject to the applicable laws of
+            India. Any disputes will be addressed in accordance with applicable
+            law and any dispute-resolution arrangement agreed upon in writing
+            between the parties.
+          </p>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="text-2xl font-bold text-violet-300">
+            13. Changes to These Terms
           </h2>
           <p className="mt-4 leading-8 text-gray-400">
             We may update these Terms & Conditions from time to time. Updated
@@ -235,9 +262,8 @@ export default function TermsPage() {
           </p>
         </section>
 
-        {/* 13 */}
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-violet-300">13. Contact Us</h2>
+          <h2 className="text-2xl font-bold text-violet-300">14. Contact Us</h2>
           <p className="mt-4 leading-8 text-gray-400">
             If you have questions about these Terms & Conditions, please contact
             us:
@@ -253,7 +279,6 @@ export default function TermsPage() {
           </p>
         </section>
 
-        {/* Footer */}
         <div className="mt-16 border-t border-white/10 pt-8 text-center">
           <Link
             href="/"

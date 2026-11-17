@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Vebnora",
+  description:
+    "Read Vebnora's Privacy Policy to understand how we collect, use, protect, and manage personal information submitted through our website.",
+  alternates: {
+    canonical: "/privacy",
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-[#171222] px-6 py-20 text-[#D8D0E5]">
@@ -14,14 +25,15 @@ export default function PrivacyPolicy() {
         </h1>
 
         <p className="mt-4 text-sm text-[#A99BBE]">
-          Last Updated: November 8, 2026
+          Last Updated: November 17, 2026
         </p>
 
         <p className="mt-8 leading-8">
           At Vebnora, we respect your privacy and are committed to protecting
           the personal information you share with us. This Privacy Policy
           explains what information we collect, how we use it, and how we
-          protect it when you visit our website or contact us.
+          protect it when you visit our website or contact us about our
+          services.
         </p>
 
         <section className="mt-10 space-y-4">
@@ -29,8 +41,8 @@ export default function PrivacyPolicy() {
             1. Information We Collect
           </h2>
           <p className="leading-8">
-            When you submit an enquiry through our website, we may collect the
-            following information:
+            When you contact us or submit an enquiry through our website, we may
+            collect information such as:
           </p>
           <ul className="list-disc space-y-2 pl-6 leading-8">
             <li>Your name</li>
@@ -39,6 +51,12 @@ export default function PrivacyPolicy() {
             <li>Your preferred website type</li>
             <li>Project details and messages you submit</li>
           </ul>
+          <p className="leading-8">
+            When you visit our website, certain technical information may also
+            be processed by our hosting and security provider. This may include
+            your IP address, browser type, device information, and information
+            about requests made to our website.
+          </p>
         </section>
 
         <section className="mt-10 space-y-4">
@@ -50,8 +68,9 @@ export default function PrivacyPolicy() {
             <li>Respond to your enquiries.</li>
             <li>Understand your website requirements.</li>
             <li>Prepare project proposals and quotations.</li>
-            <li>Communicate about our services.</li>
+            <li>Communicate about our services and projects.</li>
             <li>Improve our website and customer experience.</li>
+            <li>Maintain website security and prevent misuse.</li>
           </ul>
           <p className="leading-8">
             We do not sell your personal information to third parties.
@@ -70,11 +89,12 @@ export default function PrivacyPolicy() {
           <p className="leading-8">
             Our website is hosted using Cloudflare services. Cloudflare may
             process technical information associated with website requests to
-            provide hosting, security, and service functionality.
+            provide hosting, security, performance, and service functionality.
           </p>
           <p className="leading-8">
-            We encourage you to review the privacy policies of these third-party
-            service providers.
+            These providers may process information in accordance with their own
+            privacy policies and applicable terms. We encourage you to review
+            their policies for further details.
           </p>
         </section>
 
@@ -89,9 +109,9 @@ export default function PrivacyPolicy() {
           </p>
           <p className="leading-8">
             We have not intentionally configured analytics or advertising
-            cookies. However, our hosting platform and third-party service
-            providers may use essential cookies or similar technologies where
-            necessary to provide, maintain, and secure their services.
+            cookies. However, our hosting and security provider may use
+            essential cookies or similar technologies where necessary to
+            provide, maintain, and secure its services.
           </p>
           <p className="leading-8">
             The use of such technologies by third-party providers is subject to
@@ -101,7 +121,23 @@ export default function PrivacyPolicy() {
 
         <section className="mt-10 space-y-4">
           <h2 className="text-2xl font-bold text-[#C5A5EF]">
-            5. Data Security
+            5. Sharing of Information
+          </h2>
+          <p className="leading-8">
+            We do not sell or rent your personal information. We may share
+            information with service providers when necessary to operate our
+            website, process enquiries, or provide our services.
+          </p>
+          <p className="leading-8">
+            We may also disclose information when required by applicable law,
+            legal process, or a valid request from an authorised government
+            authority.
+          </p>
+        </section>
+
+        <section className="mt-10 space-y-4">
+          <h2 className="text-2xl font-bold text-[#C5A5EF]">
+            6. Data Security
           </h2>
           <p className="leading-8">
             We take reasonable steps to protect the information shared with us.
@@ -112,7 +148,7 @@ export default function PrivacyPolicy() {
 
         <section className="mt-10 space-y-4">
           <h2 className="text-2xl font-bold text-[#C5A5EF]">
-            6. Data Retention
+            7. Data Retention
           </h2>
           <p className="leading-8">
             We retain enquiry information only for as long as reasonably
@@ -123,28 +159,46 @@ export default function PrivacyPolicy() {
 
         <section className="mt-10 space-y-4">
           <h2 className="text-2xl font-bold text-[#C5A5EF]">
-            7. Your Privacy Rights
+            8. Your Privacy Rights
           </h2>
           <p className="leading-8">
-            You may contact us to request access to, correction of, or deletion
-            of personal information you have shared with us, subject to
-            applicable legal requirements.
+            Subject to applicable laws, you may contact us to request access to,
+            correction of, or deletion of personal information you have shared
+            with us.
+          </p>
+          <p className="leading-8">
+            You can contact us using the email address provided below for
+            privacy-related requests or questions.
           </p>
         </section>
 
         <section className="mt-10 space-y-4">
           <h2 className="text-2xl font-bold text-[#C5A5EF]">
-            8. External Links
+            9. Children's Privacy
+          </h2>
+          <p className="leading-8">
+            Our website and services are intended for businesses and individuals
+            seeking website design services. They are not directed at children.
+            We do not knowingly collect personal information from children
+            through this website.
+          </p>
+        </section>
+
+        <section className="mt-10 space-y-4">
+          <h2 className="text-2xl font-bold text-[#C5A5EF]">
+            10. External Links
           </h2>
           <p className="leading-8">
             Our website may contain links to external websites. We are not
             responsible for the privacy practices or content of those websites.
+            We encourage you to review their privacy policies when visiting
+            them.
           </p>
         </section>
 
         <section className="mt-10 space-y-4">
           <h2 className="text-2xl font-bold text-[#C5A5EF]">
-            9. Changes to This Policy
+            11. Changes to This Policy
           </h2>
           <p className="leading-8">
             We may update this Privacy Policy from time to time. Any changes
@@ -153,7 +207,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mt-10 space-y-4">
-          <h2 className="text-2xl font-bold text-[#C5A5EF]">10. Contact Us</h2>
+          <h2 className="text-2xl font-bold text-[#C5A5EF]">12. Contact Us</h2>
           <p className="leading-8">
             If you have questions about this Privacy Policy or your personal
             information, contact us:

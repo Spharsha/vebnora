@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
-
+export const metadata: Metadata = {
+  title: "Vebnora | Professional Website Design Services",
+  description:
+    "Looking for a professional business website? Vebnora creates modern, responsive and SEO-friendly websites for small businesses, clinics, restaurants and startups in India.",
+  alternates: {
+    canonical: "/",
+  },
+};
 const portfolio = [
   {
     plan: "Starter Plan",

@@ -12,22 +12,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://vebnora.prabhakarsamitipoguj.workers.dev";
+const siteUrl = "https://vebnora.in";
 
-const siteTitle = "We Build Websites That Make Your Business Stand Out.";
+const siteTitle = "Vebnora | Professional Website Design";
 
 const siteDescription =
   "We help businesses grow online with modern, beautiful and high-performing websites designed to turn visitors into customers.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
+  title: siteTitle,
+  description: siteDescription,
+
   icons: {
     icon: "/images/vebnora-icon.svg",
   },
-
-  title: "Vebnora | Professional Website Design",
-
-  description: siteDescription,
 
   openGraph: {
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Vebnora - We Build Websites That Make Your Business Stand Out.",
+        alt: "Vebnora - Professional Website Design",
       },
     ],
   },
