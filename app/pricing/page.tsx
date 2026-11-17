@@ -10,6 +10,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/pricing",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://vebnora.in/pricing",
+    siteName: "Vebnora",
+    title: "Pricing | Vebnora",
+    description:
+      "Explore Vebnora website packages and maintenance plans with clear pricing for small businesses and startups.",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Vebnora Website Design Pricing",
+      },
+    ],
+  },
 };
 
 const packages = [
