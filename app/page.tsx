@@ -73,11 +73,11 @@ const portfolio = [
         gradient: "from-emerald-600/40 to-green-950/70",
       },
       {
-        title: "Aurelia International School",
+        title: "Vidyanjali International School",
         category: "Education · School Website",
-        image: "/images/aurelia.webp",
+        image: "/images/vidyanjali.webp",
         description:
-          "A modern school website showcasing learning, campus facilities and admissions.",
+          "A modern international school website showcasing academics, campus facilities and admissions.",
         url: "https://private-school-democd.prabhakarsamitipoguj.workers.dev",
         gradient: "from-purple-600/50 to-violet-950/70",
       },

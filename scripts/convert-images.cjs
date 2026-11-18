@@ -1,4 +1,4 @@
-const sharp = require("sharp");
+﻿const sharp = require("sharp");
 const path = require("node:path");
 const fs = require("node:fs");
 
@@ -10,6 +10,7 @@ const files = [
   "ember.png",
   "everwell.png",
   "havenstone.png",
+  "vidyanjali.png",
   "lexora.png",
 ];
 
