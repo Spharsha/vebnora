@@ -32,7 +32,16 @@ export const metadata: Metadata = {
   description: siteDescription,
 
   icons: {
-    icon: "/images/vebnora-icon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      {
+        url: "/images/vebnora-icon-192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      { url: "/images/vebnora-icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/images/apple-icon.png",
   },
 
   openGraph: {
