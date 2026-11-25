@@ -19,6 +19,8 @@ const siteTitle = "Vebnora | Website Design & Development Services in India";
 const siteDescription =
   "Vebnora builds professional, mobile-friendly and SEO-friendly websites for small businesses, clinics, restaurants and startups across India.";
 
+const ogImage = "/images/og-vebnora-2026.jpg";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
@@ -42,9 +44,10 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: "/images/og-image-optimized.png",
+        url: ogImage,
         width: 1200,
         height: 630,
+        type: "image/jpeg",
         alt: "Vebnora - Website Design and Development Services in India",
       },
     ],
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/og-image-optimized.png"],
+    images: [ogImage],
   },
 };
 
